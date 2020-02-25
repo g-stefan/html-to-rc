@@ -1,0 +1,3 @@
+--exe html-to-rc
+--use-path=source
+--use-project=xyo.static
