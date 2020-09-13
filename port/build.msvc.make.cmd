@@ -18,5 +18,5 @@ echo "Error: %ACTION%"
 exit 1
 :StepX
 
-call :cmdX xyo-cc --mode=%ACTION% @source/html-to-rc.compile.info
+call :cmdX xyo-cc --mode=%ACTION% @source/html-to-rc.compile
 
