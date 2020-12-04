@@ -5,7 +5,7 @@ rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
-echo -^> git-release-check html-to-rc
+echo -^> github-release-check html-to-rc
 
 set PROJECT=html-to-rc
 if not exist source\%PROJECT%.version.ini echo Error - no version & exit 1
