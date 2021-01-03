@@ -3,11 +3,11 @@
 # http://unlicense.org/
 # Created by Grigore Stefan <g_stefan@yahoo.com>
 
-echo "-> local-release html-to-rc"
+echo "-> release html-to-rc"
 
 cmdX(){
 	if ! "$@" ; then
-		echo "Error: local-release"
+		echo "Error: release"
 		exit 1
 	fi
 }
