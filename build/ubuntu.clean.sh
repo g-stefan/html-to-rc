@@ -5,5 +5,5 @@
 
 echo "-> clean html-to-rc"
 
-rm -rf bin
-rm -rf build
+rm -rf output
+rm -rf temp
