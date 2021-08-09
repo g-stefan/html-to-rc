@@ -12,10 +12,10 @@
 namespace HtmlToRc {
 	namespace Version {
 
-		static const char *version_ = "1.7.0";
-		static const char *build_ = "11";
-		static const char *versionWithBuild_ = "1.7.0.11";
-		static const char *datetime_ = "2021-08-05 20:38:13";
+		static const char *version_ = "1.8.0";
+		static const char *build_ = "21";
+		static const char *versionWithBuild_ = "1.8.0.21";
+		static const char *datetime_ = "2021-08-09 17:38:03";
 
 		const char *version() {
 			return version_;
