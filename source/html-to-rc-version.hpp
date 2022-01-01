@@ -10,10 +10,10 @@
 #ifndef HTML_TO_RC_VERSION_HPP
 #define HTML_TO_RC_VERSION_HPP
 
-#define HTML_TO_RC_VERSION_ABCD                1,10,0,22
-#define HTML_TO_RC_VERSION_STR                 "1.10.0"
-#define HTML_TO_RC_VERSION_STR_BUILD           "22"
-#define HTML_TO_RC_VERSION_STR_DATETIME        "2021-11-22 13:32:03"
+#define HTML_TO_RC_VERSION_ABCD                1,11,0,23
+#define HTML_TO_RC_VERSION_STR                 "1.11.0"
+#define HTML_TO_RC_VERSION_STR_BUILD           "23"
+#define HTML_TO_RC_VERSION_STR_DATETIME        "2022-01-01 21:19:33"
 
 #ifndef XYO_RC
 
