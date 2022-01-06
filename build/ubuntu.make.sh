@@ -18,3 +18,4 @@ cmdX(){
 }
 
 cmdX xyo-cc --mode=$ACTION @build/source/html-to-rc.compile
+cmdX xyo-cc --mode=$ACTION @build/source/html-to-rc.library.compile

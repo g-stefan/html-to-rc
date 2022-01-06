@@ -12,41 +12,42 @@
 #include <string.h>
 
 #include "xyo.hpp"
+#include "html-to-rc.hpp"
 #include "html-to-rc-copyright.hpp"
 #include "html-to-rc-license.hpp"
+#ifndef HTML_TO_RC_NO_VERSION
 #include "html-to-rc-version.hpp"
+#endif
 
-namespace Main {
+namespace HTMLToRC {
 
 	using namespace XYO;
 
-	class Application :
-		public virtual IMain {
-			XYO_DISALLOW_COPY_ASSIGN_MOVE(Application);
-		public:
-
-			inline Application() {};
-
-			void showUsage();
-			void showLicense();
-
-			int main(int cmdN, char *cmdS[]);
-	};
-
 	void Application::showUsage() {
 		printf("html-to-rc - Convert HTML file/directory to RC source\n");
-		printf("version %s build %s [%s]\n", HtmlToRc::Version::version(), HtmlToRc::Version::build(), HtmlToRc::Version::datetime());
-		printf("%s\n\n", HtmlToRc::Copyright::fullCopyright());
+		showVersion();
+		printf("%s\n\n", HTMLToRC::Copyright::fullCopyright());
 
 		printf("%s",
-			"options:\n"
-			"    --license           show license\n"
+			"    --usage               this info\n"
+			"    --license             show license\n"
+			"    --version             show version\n"
+			"    --in=file/folder      input file or folder\n"
+			"    --file-out=file       output file\n"
+			"    --touch=file          touch file if changed input file\n"
+			"    --append              append content\n"
 		);
 		printf("\n");
 	};
 
 	void Application::showLicense() {
-		printf("%s", HtmlToRc::License::content());
+		printf("%s", HTMLToRC::License::content());
+	};
+
+	void Application::showVersion() {
+#ifndef HTML_TO_RC_NO_VERSION
+		printf("version %s build %s [%s]\n", HTMLToRC::Version::version(), HTMLToRC::Version::build(), HTMLToRC::Version::datetime());
+#endif
 	};
 
 	int Application::main(int cmdN, char *cmdS[]) {
@@ -69,12 +70,16 @@ namespace Main {
 					optValue = String::substring(opt, optIndex + 1);
 					opt = String::substring(opt, 0, optIndex);
 				};
+				if (opt == "usage") {
+					showUsage();
+					return 0;
+				};
 				if (opt == "license") {
 					showLicense();
 					return 0;
 				};
-				if (opt == "usage") {
-					showUsage();
+				if (opt == "version") {
+					showVersion();
 					return 0;
 				};
 				if (opt == "in") {
@@ -137,4 +142,6 @@ namespace Main {
 
 };
 
-XYO_APPLICATION_MAIN_STD(Main::Application);
+#ifndef HTML_TO_RC_LIBRARY
+XYO_APPLICATION_MAIN_STD(HTMLToRC::Application);
+#endif

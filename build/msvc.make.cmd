@@ -19,3 +19,5 @@ exit 1
 :cmdXDefined
 
 call :cmdX xyo-cc --mode=%ACTION% @build/source/html-to-rc.compile
+call :cmdX xyo-cc --mode=%ACTION% @build/source/html-to-rc.library.compile
+

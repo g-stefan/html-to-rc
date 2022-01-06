@@ -18,7 +18,7 @@
 
 #ifndef XYO_RC
 
-namespace HtmlToRc {
+namespace HTMLToRC {
 	namespace Copyright {
 		const char *copyright();
 		const char *publisher();

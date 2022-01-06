@@ -9,7 +9,7 @@
 
 #include "html-to-rc-license.hpp"
 
-namespace HtmlToRc {
+namespace HTMLToRC {
 	namespace License {
 
 		static const char *license_ =

@@ -1,0 +1,7 @@
+--lib html-to-rc
+--def=HTML_TO_RC_LIBRARY
+--src-hpp=source/html-to-rc.hpp
+--build-include
+--no-default-include
+--install-include-direct
+--use-project=xyo.static

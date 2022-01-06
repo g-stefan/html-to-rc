@@ -9,7 +9,7 @@
 
 #include "html-to-rc-version.hpp"
 
-namespace HtmlToRc {
+namespace HTMLToRC {
 	namespace Version {
 
 		static const char *version_ = "1.11.0";

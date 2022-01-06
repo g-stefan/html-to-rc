@@ -9,7 +9,7 @@
 
 #include "html-to-rc-copyright.hpp"
 
-namespace HtmlToRc {
+namespace HTMLToRC {
 	namespace Copyright {
 
 		static const char *copyright_ = "Copyright (c) Grigore Stefan";

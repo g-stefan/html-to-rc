@@ -10,7 +10,7 @@
 #ifndef HTML_TO_RC_LICENSE_HPP
 #define HTML_TO_RC_LICENSE_HPP
 
-namespace HtmlToRc {
+namespace HTMLToRC {
 	namespace License {
 		const char *content();
 		const char *shortContent();

@@ -17,7 +17,7 @@
 
 #ifndef XYO_RC
 
-namespace HtmlToRc {
+namespace HTMLToRC {
 	namespace Version {
 		const char *version();
 		const char *build();
