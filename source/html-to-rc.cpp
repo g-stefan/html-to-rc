@@ -16,7 +16,7 @@
 #include "html-to-rc-copyright.hpp"
 #include "html-to-rc-license.hpp"
 #ifndef HTML_TO_RC_NO_VERSION
-#include "html-to-rc-version.hpp"
+#	include "html-to-rc-version.hpp"
 #endif
 
 namespace HTMLToRC {
@@ -29,14 +29,13 @@ namespace HTMLToRC {
 		printf("%s\n\n", HTMLToRC::Copyright::fullCopyright());
 
 		printf("%s",
-			"    --usage               this info\n"
-			"    --license             show license\n"
-			"    --version             show version\n"
-			"    --in=file/folder      input file or folder\n"
-			"    --file-out=file       output file\n"
-			"    --touch=file          touch file if changed input file\n"
-			"    --append              append content\n"
-		);
+		       "    --usage               this info\n"
+		       "    --license             show license\n"
+		       "    --version             show version\n"
+		       "    --in=file/folder      input file or folder\n"
+		       "    --file-out=file       output file\n"
+		       "    --touch=file          touch file if changed input file\n"
+		       "    --append              append content\n");
 		printf("\n");
 	};
 
@@ -66,7 +65,7 @@ namespace HTMLToRC {
 			if (StringCore::beginWith(cmdS[i], "--")) {
 				opt = &cmdS[i][2];
 				optValue = "";
-				if(String::indexOf(opt, "=", 0, optIndex)) {
+				if (String::indexOf(opt, "=", 0, optIndex)) {
 					optValue = String::substring(opt, optIndex + 1);
 					opt = String::substring(opt, 0, optIndex);
 				};
@@ -84,7 +83,7 @@ namespace HTMLToRC {
 				};
 				if (opt == "in") {
 					pathOrFileNameIn = optValue;
-					if(pathOrFileNameIn.length() == 0) {
+					if (pathOrFileNameIn.length() == 0) {
 						printf("Error: in is empty\n");
 						return 1;
 					};
@@ -92,7 +91,7 @@ namespace HTMLToRC {
 				};
 				if (opt == "file-out") {
 					fileNameOut = optValue;
-					if(fileNameOut.length() == 0) {
+					if (fileNameOut.length() == 0) {
 						printf("Error: file-out is empty\n");
 						return 1;
 					};
@@ -105,7 +104,7 @@ namespace HTMLToRC {
 				if (opt == "touch") {
 					isTouch = true;
 					touchFileName = optValue;
-					if(touchFileName.length() == 0) {
+					if (touchFileName.length() == 0) {
 						printf("Error: touch filename is empty\n");
 						return 1;
 					};
@@ -114,26 +113,26 @@ namespace HTMLToRC {
 			};
 		};
 
-		if(pathOrFileNameIn.length() == 0 ||
-			fileNameOut.length() == 0) {
+		if (pathOrFileNameIn.length() == 0 ||
+		    fileNameOut.length() == 0) {
 			showUsage();
 			return 1;
 		};
 
-		if(isTouch) {
-			if(!Shell::isChangedRecursive(fileNameOut, pathOrFileNameIn)) {
+		if (isTouch) {
+			if (!Shell::isChangedRecursive(fileNameOut, pathOrFileNameIn)) {
 				return 0;
 			};
 		};
 
-		if(!Util::pathToHtmlRc(
-				pathOrFileNameIn,
-				fileNameOut,
-				append)) {
+		if (!Util::pathToHtmlRc(
+		        pathOrFileNameIn,
+		        fileNameOut,
+		        append)) {
 			return 1;
 		};
 
-		if(isTouch) {
+		if (isTouch) {
 			Shell::touchIfExists(touchFileName);
 		};
 

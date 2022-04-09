@@ -10,11 +10,11 @@
 #ifndef HTML_TO_RC_COPYRIGHT_HPP
 #define HTML_TO_RC_COPYRIGHT_HPP
 
-#define HTML_TO_RC_COPYRIGHT            "Copyright (c) Grigore Stefan"
-#define HTML_TO_RC_PUBLISHER            "Grigore Stefan"
-#define HTML_TO_RC_COMPANY              HTML_TO_RC_PUBLISHER
-#define HTML_TO_RC_CONTACT              "g_stefan@yahoo.com"
-#define HTML_TO_RC_FULL_COPYRIGHT       HTML_TO_RC_COPYRIGHT " <" HTML_TO_RC_CONTACT ">"
+#define HTML_TO_RC_COPYRIGHT "Copyright (c) Grigore Stefan"
+#define HTML_TO_RC_PUBLISHER "Grigore Stefan"
+#define HTML_TO_RC_COMPANY HTML_TO_RC_PUBLISHER
+#define HTML_TO_RC_CONTACT "g_stefan@yahoo.com"
+#define HTML_TO_RC_FULL_COPYRIGHT HTML_TO_RC_COPYRIGHT " <" HTML_TO_RC_CONTACT ">"
 
 #ifndef XYO_RC
 
