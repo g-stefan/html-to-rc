@@ -16,7 +16,6 @@ namespace XYO::HTMLToRC::Application::Copyright {
 	const char *publisher();
 	const char *company();
 	const char *contact();
-	const char *fullCopyright();
 };
 
 #endif

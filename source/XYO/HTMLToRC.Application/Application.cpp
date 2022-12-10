@@ -15,7 +15,7 @@ namespace XYO::HTMLToRC::Application {
 	void Application::showUsage() {
 		printf("HTMLToRC - Convert file to C/C++ source\n");
 		showVersion();
-		printf("%s\n\n", HTMLToRC::Application::Copyright::fullCopyright());
+		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright());
 
 		printf("%s",
 		       "    --usage               this info\n"
@@ -29,7 +29,7 @@ namespace XYO::HTMLToRC::Application {
 	};
 
 	void Application::showLicense() {
-		printf("%s%s", HTMLToRC::Application::License::licenseHeader(), HTMLToRC::Application::License::licenseBody());
+		printf("%s", HTMLToRC::Application::License::license());
 	};
 
 	void Application::showVersion() {
@@ -47,7 +47,7 @@ namespace XYO::HTMLToRC::Application {
 		size_t optIndex;
 		String optValue;
 		TDynamicArray<String> cmdLine;
-		
+
 		String pathOrFileNameIn;
 		String fileNameOut;
 		bool append = false;
@@ -94,7 +94,7 @@ namespace XYO::HTMLToRC::Application {
 					showVersion();
 					return 0;
 				};
-								if (opt == "in") {
+				if (opt == "in") {
 					pathOrFileNameIn = optValue;
 					if (pathOrFileNameIn.length() == 0) {
 						printf("Error: in is empty\n");

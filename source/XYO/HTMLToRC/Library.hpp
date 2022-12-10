@@ -13,8 +13,8 @@
 
 namespace XYO::HTMLToRC {
 
-	XYO_HTMLTORC_EXPORT bool htmlToRC(const char *pathOrFileNameIn,const char *fileNameOut,bool append,const char *basePath = nullptr);
-	
+	XYO_HTMLTORC_EXPORT bool htmlToRC(const char *pathOrFileNameIn, const char *fileNameOut, bool append, const char *basePath = nullptr);
+
 };
 
 #endif

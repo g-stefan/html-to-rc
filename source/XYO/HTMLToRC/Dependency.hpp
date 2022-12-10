@@ -14,9 +14,9 @@
 // -- Export
 
 #ifndef XYO_HTMLTORC_INTERNAL
-#ifdef HTML_TO_RC_LIBRARY_INTERNAL
-#define XYO_HTMLTORC_INTERNAL
-#endif
+#	ifdef HTML_TO_RC_LIBRARY_INTERNAL
+#		define XYO_HTMLTORC_INTERNAL
+#	endif
 #endif
 
 #ifdef XYO_HTMLTORC_INTERNAL

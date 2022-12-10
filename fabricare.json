@@ -1,11 +1,11 @@
 {
 	"solution" : {
 		"name" : "html-to-rc",
-		"type" : "xyo-cpp-solution",
+		"type" : "xyo-cpp",
 		"projects" : [
 			{
 				"name" : "html-to-rc.library",
-				"type" : "xyo-cpp-project",
+				"type" : "xyo-cpp",
 				"make" : "lib-and-dll",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC",
@@ -15,7 +15,7 @@
 			},
 			{
 				"name" : "html-to-rc.application",
-				"type" : "xyo-cpp-project",
+				"type" : "xyo-cpp",
 				"make" : "lib",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC.Application",
@@ -29,7 +29,7 @@
 			},
 			{
 				"name" : "html-to-rc",
-				"type" : "xyo-cpp-project",
+				"type" : "xyo-cpp",
 				"make" : "exe",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC.Application",
