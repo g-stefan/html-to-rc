@@ -21,7 +21,7 @@
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC.Application",
 				"dependency" : [
-					"html-to-rc.library"
+					"html-to-rc"
 				],
 				"defines" : [
 					"XYO_HTMLTORC_APPLICATION_LIBRARY"
