@@ -12,7 +12,8 @@
 				"dependency" : [
 					"xyo-system"
 				],
-				"versionName" : "html-to-rc.library"
+				"versionName" : "html-to-rc.library",
+				"noRelease" : true
 			},
 			{
 				"name" : "html-to-rc.application",
@@ -26,7 +27,8 @@
 				"defines" : [
 					"XYO_HTMLTORC_APPLICATION_LIBRARY"
 				],
-				"linkVersion" : "html-to-rc"
+				"linkVersion" : "html-to-rc",
+				"noRelease" : true
 			},
 			{
 				"name" : "html-to-rc",
