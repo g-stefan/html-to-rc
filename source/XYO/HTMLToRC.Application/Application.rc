@@ -9,3 +9,4 @@
 #include <XYO/HTMLToRC.Application/Version.rh>
 
 XYO_APPLICATION_VERSION_INFO(XYO_HTMLTORC_APPLICATION,"html-to-rc.exe","HTMLToRC - Convert file to C/C++ source")
+XYO_APPLICATION_MANIFEST("Application.manifest")
