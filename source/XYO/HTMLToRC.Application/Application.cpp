@@ -15,7 +15,7 @@ namespace XYO::HTMLToRC::Application {
 	void Application::showUsage() {
 		printf("HTMLToRC - Convert file to C/C++ source\n");
 		showVersion();
-		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright());
+		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright().c_str());
 
 		printf("%s",
 		       "    --usage               this info\n"
@@ -29,7 +29,7 @@ namespace XYO::HTMLToRC::Application {
 	};
 
 	void Application::showLicense() {
-		printf("%s", HTMLToRC::Application::License::license());
+		printf("%s", HTMLToRC::Application::License::license().c_str());
 	};
 
 	void Application::showVersion() {

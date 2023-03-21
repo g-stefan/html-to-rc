@@ -8,11 +8,11 @@
 
 namespace XYO::HTMLToRC::Application::License {
 
-	const char *license() {
+	std::string license() {
 		return XYO::HTMLToRC::License::license();
 	};
 
-	const char *shortLicense() {
+	std::string shortLicense() {
 		return XYO::HTMLToRC::License::shortLicense();
 	};
 
