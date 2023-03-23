@@ -15,7 +15,7 @@ namespace XYO::HTMLToRC::Application {
 	void Application::showUsage() {
 		printf("HTMLToRC - Convert file to C/C++ source\n");
 		showVersion();
-		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright().c_str());
+		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright());
 
 		printf("%s",
 		       "    --usage               this info\n"
@@ -78,9 +78,9 @@ namespace XYO::HTMLToRC::Application {
 			if (StringCore::beginWith(cmdLine[i], "--")) {
 				opt = cmdLine[i].index(2);
 				optValue = "";
-				if (String::indexOf(opt, "=", 0, optIndex)) {
-					optValue = String::substring(opt, optIndex + 1);
-					opt = String::substring(opt, 0, optIndex);
+				if (StringX::indexOf(opt, "=", 0, optIndex)) {
+					optValue = StringX::substring(opt, optIndex + 1);
+					opt = StringX::substring(opt, 0, optIndex);
 				};
 				if (opt == "usage") {
 					showUsage();

@@ -23,7 +23,7 @@ namespace XYO::HTMLToRC {
 		String basePathX;
 		String fileName;
 
-		if (!(String::indexOf(pathToSearch, "*", 0, index) || String::indexOf(pathToSearch, "?", 0, index))) {
+		if (!(StringX::indexOf(pathToSearch, "*", 0, index) || StringX::indexOf(pathToSearch, "?", 0, index))) {
 			pathToSearch += "/*";
 		};
 
@@ -38,10 +38,10 @@ namespace XYO::HTMLToRC {
 
 			Shell::getFileList(pathToSearch, fileList);
 			for (k = 0; k < fileList.length(); ++k) {
-				fileName = String::substring(fileList[k], basePathX.length());
-				line = String::replace(fileName, "\\", "/") +
+				fileName = StringX::substring(fileList[k], basePathX.length());
+				line = StringX::replace(fileName, "\\", "/") +
 				       " HTML \"" +
-				       String::replace(String::replace(fileList[k], "/", "\\"), "\\", "\\\\") +
+				       StringX::replace(StringX::replace(fileList[k], "/", "\\"), "\\", "\\\\") +
 				       "\"\r\n";
 				fwrite(line.value(), 1, line.length(), output);
 			};
