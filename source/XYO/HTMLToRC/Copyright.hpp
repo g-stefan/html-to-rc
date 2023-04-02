@@ -12,10 +12,10 @@
 #endif
 
 namespace XYO::HTMLToRC::Copyright {
-	const char *copyright();
-	const char *publisher();
-	const char *company();
-	const char *contact();
+	XYO_HTMLTORC_EXPORT const char *copyright();
+	XYO_HTMLTORC_EXPORT const char *publisher();
+	XYO_HTMLTORC_EXPORT const char *company();
+	XYO_HTMLTORC_EXPORT const char *contact();
 };
 
 #endif

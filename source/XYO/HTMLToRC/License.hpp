@@ -13,8 +13,8 @@
 
 namespace XYO::HTMLToRC::License {
 
-	std::string license();
-	std::string shortLicense();
+	XYO_HTMLTORC_EXPORT std::string license();
+	XYO_HTMLTORC_EXPORT std::string shortLicense();
 
 };
 

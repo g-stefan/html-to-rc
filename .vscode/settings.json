@@ -55,6 +55,10 @@
 		"xmemory": "cpp",
 		"xstddef": "cpp",
 		"xstring": "cpp",
-		"xtr1common": "cpp"
+		"xtr1common": "cpp",
+		"algorithm": "cpp",
+		"map": "cpp",
+		"hash_map": "cpp",
+		"xtree": "cpp"
 	}
 }

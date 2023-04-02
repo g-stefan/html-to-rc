@@ -13,10 +13,10 @@
 
 namespace XYO::HTMLToRC::Version {
 
-	const char *version();
-	const char *build();
-	const char *versionWithBuild();
-	const char *datetime();
+	XYO_HTMLTORC_EXPORT const char *version();
+	XYO_HTMLTORC_EXPORT const char *build();
+	XYO_HTMLTORC_EXPORT const char *versionWithBuild();
+	XYO_HTMLTORC_EXPORT const char *datetime();
 
 };
 
