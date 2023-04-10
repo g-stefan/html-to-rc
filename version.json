@@ -1,14 +1,14 @@
 {
 	"html-to-rc.library": {
-		"version": "2.0.2",
-		"build": "5",
-		"date": "2023-04-03",
-		"time": "01:05:35"
+		"version": "3.0.0",
+		"build": "6",
+		"date": "2023-04-10",
+		"time": "15:46:47"
 	},
 	"html-to-rc": {
-		"version": "2.0.0",
-		"build": "5",
-		"date": "2023-04-03",
-		"time": "01:05:35"
+		"version": "3.0.0",
+		"build": "6",
+		"date": "2023-04-10",
+		"time": "15:46:47"
 	}
 }
