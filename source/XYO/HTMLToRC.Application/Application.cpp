@@ -18,6 +18,7 @@ namespace XYO::HTMLToRC::Application {
 		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright());
 
 		printf("%s",
+		       "    --help                this info\n"
 		       "    --usage               this info\n"
 		       "    --license             show license\n"
 		       "    --version             show version\n"
@@ -81,6 +82,10 @@ namespace XYO::HTMLToRC::Application {
 				if (opt.indexOf("=", 0, optIndex)) {
 					optValue = opt.substring(optIndex + 1);
 					opt = opt.substring(0, optIndex);
+				};
+				if (opt == "help") {
+					showUsage();
+					return 0;
 				};
 				if (opt == "usage") {
 					showUsage();
