@@ -8,4 +8,4 @@
 #include <XYO/HTMLToRC/Copyright.rh>
 #include <XYO/HTMLToRC/Version.rh>
 
-XYO_APPLICATION_VERSION_INFO(XYO_HTMLTORC,"xyo-html-to-rc.dll","HTMLToRC - Convert HTML To RC source")
+XYO_PLATFORM_VERSION_INFO(XYO_HTMLTORC,"xyo-html-to-rc.dll","HTMLToRC - Convert HTML To RC source")
