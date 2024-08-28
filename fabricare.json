@@ -5,7 +5,7 @@
 		"projects" : [
 			{
 				"name" : "html-to-rc",
-				"make" : "lib",
+				"make" : "dll-or-lib",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC",
 				"dependency" : [
@@ -14,7 +14,7 @@
 				"versionName" : "html-to-rc.library"
 			},
 			{
-				"name" : "html-to-rc.application",
+				"name" : "html-to-rc.application.static",
 				"make" : "lib",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC.Application",
@@ -28,7 +28,7 @@
 			},
 			{
 				"name" : "html-to-rc",
-				"make" : "exe.static",
+				"make" : "exe",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC.Application",
 				"dependency" : [
