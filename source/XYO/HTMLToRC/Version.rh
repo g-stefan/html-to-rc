@@ -1,5 +1,5 @@
 // HTML To RC
-// Copyright (c) 2007-2024 Grigore Stefan <g_stefan@yahoo.com>
+// Copyright (c) 2007-2025 Grigore Stefan <g_stefan@yahoo.com>
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
 // SPDX-FileCopyrightText: 2007-2023  Grigore Stefan <g_stefan@yahoo.com>
 // SPDX-License-Identifier: MIT
@@ -8,11 +8,11 @@
 #define XYO_HTMLTORC_VERSION_RH
 
 #ifndef XYO_HTMLTORC_NO_VERSION
-#define XYO_HTMLTORC_VERSION_ABCD 4,1,0,7
-#define XYO_HTMLTORC_VERSION_STR "4.1.0"
-#define XYO_HTMLTORC_VERSION_STR_BUILD "7"
-#define XYO_HTMLTORC_VERSION_STR_DATETIME "2024-08-23 12:19:20"
-#define XYO_HTMLTORC_VERSION_STR_WITH_BUILD "4.1.0.7"
+#define XYO_HTMLTORC_VERSION_ABCD 4,2,0,8
+#define XYO_HTMLTORC_VERSION_STR "4.2.0"
+#define XYO_HTMLTORC_VERSION_STR_BUILD "8"
+#define XYO_HTMLTORC_VERSION_STR_DATETIME "2025-04-29 13:46:05"
+#define XYO_HTMLTORC_VERSION_STR_WITH_BUILD "4.2.0.8"
 #else
 #define XYO_HTMLTORC_VERSION_ABCD 0,0,0,0
 #define XYO_HTMLTORC_VERSION_STR "0.0.0"

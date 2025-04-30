@@ -1,5 +1,5 @@
 // HTML To RC
-// Copyright (c) 2007-2024 Grigore Stefan <g_stefan@yahoo.com>
+// Copyright (c) 2007-2025 Grigore Stefan <g_stefan@yahoo.com>
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
 // SPDX-FileCopyrightText: 2007-2023  Grigore Stefan <g_stefan@yahoo.com>
 // SPDX-License-Identifier: MIT
@@ -59,14 +59,12 @@ namespace XYO::HTMLToRC::Application {
 			if (StringCore::beginWith(cmdS[i], "@")) {
 				String content;
 				if (Shell::fileGetContents(&cmdS[i][1], content)) {
-					int cmdNX;
-					char **cmdSX;
+					XYO::System::ShellArguments shellArguments;
 					int m;
-					Shell::mainArgsSet(content, cmdNX, cmdSX);
-					for (m = 0; m < cmdNX; ++m) {
-						cmdLine.push(cmdSX[m]);
+					shellArguments.set(content);
+					for (m = 0; m < shellArguments.cmdN; ++m) {
+						cmdLine.push(shellArguments.cmdS[m]);
 					};
-					Shell::mainArgsDelete(cmdNX, cmdSX);
 					continue;
 				};
 				printf("Error: file not found - %s\n", &cmdS[i][1]);
