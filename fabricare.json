@@ -14,17 +14,33 @@
 				"versionName" : "html-to-rc.library"
 			},
 			{
+				"name": "html-to-rc.static",
+				"make": "lib",
+				"category": "make",
+				"SPDX-License-Identifier": "MIT",
+				"sourcePath" : "XYO/HTMLToRC",
+				"dependency" : [
+					"xyo-system.static"
+				],
+				"dependencyDefines" : [
+					"XYO_HTMLTORC_LIBRARY"
+				],
+				"linkVersion": "html-to-rc.library",
+				"crt": "static"
+			},
+			{
 				"name" : "html-to-rc.application.static",
 				"make" : "lib",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/HTMLToRC.Application",
 				"dependency" : [
-					"html-to-rc"
+					"html-to-rc.static"
 				],
-				"defines" : [
+				"dependencyDefines" : [
 					"XYO_HTMLTORC_APPLICATION_LIBRARY"
 				],
-				"linkVersion" : "html-to-rc"
+				"linkVersion" : "html-to-rc",
+				"crt": "static"
 			},
 			{
 				"name" : "html-to-rc",
