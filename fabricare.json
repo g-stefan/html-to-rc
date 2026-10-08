@@ -1,5 +1,6 @@
 {
 	"solution" : {
+		"namespace" : "xyo",
 		"name" : "html-to-rc",
 		"type" : "xyo-cpp",
 		"projects" : [

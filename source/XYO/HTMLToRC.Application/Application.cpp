@@ -1,7 +1,7 @@
 // HTML To RC
 // Copyright (c) 2007-2026 Grigore Stefan <g_stefan@yahoo.com>
 // MIT License (MIT) <http://opensource.org/licenses/MIT>
-// SPDX-FileCopyrightText: 2007-2023  Grigore Stefan <g_stefan@yahoo.com>
+// SPDX-FileCopyrightText: 2007-2026 Grigore Stefan <g_stefan@yahoo.com>
 // SPDX-License-Identifier: MIT
 
 #include <XYO/HTMLToRC.hpp>
@@ -13,7 +13,7 @@
 namespace XYO::HTMLToRC::Application {
 
 	void Application::showUsage() {
-		printf("HTMLToRC - Convert file to C/C++ source\n");
+		printf("HTMLToRC - Convert HTML folder to RC source\n");
 		showVersion();
 		printf("%s\n\n", HTMLToRC::Application::Copyright::copyright());
 
@@ -22,9 +22,9 @@ namespace XYO::HTMLToRC::Application {
 		       "    --usage               this info\n"
 		       "    --license             show license\n"
 		       "    --version             show version\n"
-		       "    --in=file/folder      input file or folder\n"
+		       "    --in=folder           input folder or pattern (folder/*.html)\n"
 		       "    --file-out=file       output file\n"
-		       "    --touch=file          touch file if changed input file\n"
+		       "    --touch=file          touch file if a file of the input changed\n"
 		       "    --append              append content\n");
 		printf("\n");
 	};
